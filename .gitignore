@@ -26,7 +26,11 @@ bin/
 .vscode/
 
 ### Mac OS ###
+<<<<<<< Updated upstream
 .DS_Store
 
 /*
 !/src/
+=======
+.DS_Store
+>>>>>>> Stashed changes
