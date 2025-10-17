@@ -17,7 +17,7 @@ public class Practice1 {
             System.out.println("e: 종료");
 
             System.out.println("선택: ");
-            key = scanner.nextLine().trim().toLowerCase();;
+            key = scanner.nextLine().trim().toLowerCase(); //대소문자
 
             switch(key){
                 case "i":
@@ -35,9 +35,9 @@ public class Practice1 {
 
                 case "s":
                     System.out.println("찾을 문자열을 입력하세요: ");
-                    String target = scanner.nextLine();
+                    String targetString = scanner.nextLine();
 
-                    if(target.isEmpty()){
+                    if(targetString.isEmpty()){
                         System.out.println("문자열을 찾을 수 없습니다.");
                         break;
                     }
@@ -45,11 +45,11 @@ public class Practice1 {
                     int count = 0;
                     int index = 0;
 
-                    while ((index = stringInput.indexOf(target, index)) != -1) {
+                    while ((index = stringInput.indexOf(targetString, index)) != -1) {
                         count++;
-                        index += target.length();
+                        index += targetString.length();
                     }
-                    System.out.println("'" + target + "'이/가 " + count + "회 존재합니다.");
+                    System.out.println("'" + targetString + "'이/가 " + count + "회 존재합니다.");
                     break;
 
                 case "r":
@@ -59,7 +59,6 @@ public class Practice1 {
                     String replacement = scanner.nextLine();
                     stringInput = stringInput.replace(findString, replacement);
                     System.out.println("변경된 문자열: " + stringInput);
-
                     break;
 
                 case "h":
