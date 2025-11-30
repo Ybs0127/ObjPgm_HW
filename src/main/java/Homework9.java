@@ -22,7 +22,7 @@ public class Homework9 {
             }
 
         } catch (Exception e) {
-            System.out.println("⚠ db.txt 파일을 읽는 중 오류 발생");
+            System.out.println("db.txt 파일을 읽는 중 오류 발생");
             return;
         }
 
